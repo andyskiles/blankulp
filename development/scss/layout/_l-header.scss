@@ -4,4 +4,20 @@ Layout-Header
 ========================
 */
 
-.site-header {}
+.site-header {
+
+	nav {
+
+		@include bp(l) {
+			clear: both;
+			display: flex;
+		}
+	}
+
+	a {
+
+		@include bp(l) {
+			flex-grow: 1;
+		}
+	}
+}

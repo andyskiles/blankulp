@@ -12,6 +12,7 @@ function blankulp_setup() {
 	);
 }
 
+
 add_action( 'wp_enqueue_scripts', 'load_style' );
 function load_style() {
     wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.css' );
@@ -55,6 +56,7 @@ add_filter( 'wp_title', 'blankulp_filter_wp_title' );
 function blankulp_filter_wp_title( $title ) {
 	return $title . esc_attr( get_bloginfo( 'name' ) );
 }
+
 
 add_action( 'widgets_init', 'blankulp_widgets_init' );
 function blankulp_widgets_init() {

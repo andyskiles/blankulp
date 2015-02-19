@@ -4,11 +4,13 @@ Layout-Footer
 ========================
 */
 
-.site-footer {}
+.site-footer {
+	display: flex;
+}
 
 .footer-block {
-
+	
 	@include bp(l) {
-		@include span(4);
+		flex-grow: 1;
 	}
 }

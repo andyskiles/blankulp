@@ -17,7 +17,15 @@
 		<?php echo esc_html( get_bloginfo( 'name' ) ); ?>
 	</a>
 </h2>
-<nav id="menu" role="navigation">
-	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+<nav role="navigation">
+	<?php 
+	$menu = array(
+	  'container'       => false,
+	  'echo'            => false,
+	  'items_wrap'      => '%3$s',
+	  'depth'           => 0,
+	);
+	echo strip_tags(wp_nav_menu( $menu ), '<a>' );
+	?>
 </nav>
 </header>
