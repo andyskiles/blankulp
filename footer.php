@@ -1,8 +1,12 @@
 <footer class="site-footer" role="contentinfo">
+	<?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
+	<?php dynamic_sidebar( 'footer-widget-area' ); ?>
+	<?php endif; ?>
 </footer>
-<?php wp_footer(); ?>
+<small class="copyright">
+	Copyright 2015
+</small>
 </div>
-<script src="<?php echo get_template_directory_uri(); ?>/site_assets/js/libs/jquery-1.11.1.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/site_assets/js/main.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html>

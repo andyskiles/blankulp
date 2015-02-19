@@ -4,4 +4,11 @@ Partials-Footer
 ========================
 */
 
-.site-footer {}
+.site-footer {
+	clear: both;
+}
+
+.copyright {
+	clear: both;
+	display: block;
+}

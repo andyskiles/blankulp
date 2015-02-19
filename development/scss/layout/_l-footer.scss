@@ -5,3 +5,10 @@ Layout-Footer
 */
 
 .site-footer {}
+
+.footer-block {
+
+	@include bp(l) {
+		@include span(4);
+	}
+}
