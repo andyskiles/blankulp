@@ -1,7 +1,8 @@
 <?php get_header(); ?>
-<section id="content" role="main">
-<article id="post-0" class="post not-found">
-<header class="header">
+<main class="content-wrap" role="main">
+<section class="page-content" role="main">
+<article class="not-found">
+<header class="entry-header">
 <h1 class="entry-title"><?php _e( 'Not Found', 'blankslate' ); ?></h1>
 </header>
 <section class="entry-content">
@@ -11,4 +12,5 @@
 </article>
 </section>
 <?php get_sidebar(); ?>
+</main>
 <?php get_footer(); ?>

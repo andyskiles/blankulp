@@ -1,18 +1,13 @@
 <?php get_header(); ?>
 <?php global $post; ?>
-<section id="content" role="main">
+<main class="page-content">
+<section class="page-content" role="main">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<header class="header">
+<header class="entry-header">
 <h1 class="entry-title"><?php the_title(); ?> <span class="meta-sep">|</span> <a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php printf( __( 'Return to %s', 'blankslate' ), esc_html( get_the_title( $post->post_parent ), 1 ) ); ?>" rev="attachment"><span class="meta-nav">&larr; </span><?php echo get_the_title( $post->post_parent ); ?></a></h1> <?php edit_post_link(); ?>
 <?php get_template_part( 'entry', 'meta' ); ?>
 </header>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<header class="header">
-<nav id="nav-above" class="navigation" role="navigation">
-<div class="nav-previous"><?php previous_image_link( false, '&larr;' ); ?></div>
-<div class="nav-next"><?php next_image_link( false, '&rarr;' ); ?></div>
-</nav>
-</header>
+<article class="post-<?php the_ID(); ?>">
 <section class="entry-content">
 <div class="entry-attachment">
 <?php if ( wp_attachment_is_image( $post->ID ) ) : $att_image = wp_get_attachment_image_src( $post->ID, "large" ); ?>
@@ -29,4 +24,5 @@
 <?php endwhile; endif; ?>
 </section>
 <?php get_sidebar(); ?>
+</main>
 <?php get_footer(); ?>

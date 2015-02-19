@@ -21,6 +21,7 @@ var gulp = require('gulp'),
 // Launch Server
 gulp.task('browser-sync', function() {
     browserSync({
+        // MAMP url
         proxy: "http://localhost:8888"
     });
 });

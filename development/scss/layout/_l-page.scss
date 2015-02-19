@@ -3,3 +3,27 @@
 Layout-Page
 ========================
 */
+
+.site-wrap {
+	@include container(95vw);
+
+	@include bp(l) {
+		@include container(80vw);
+	}
+}
+
+.content-wrap {}
+
+.page-content {
+
+	@include bp(l) {
+		@include span(8);
+	}
+}
+
+.site-sidebar {
+	
+	@include bp(l) {
+		@include span(4);
+	}
+}
