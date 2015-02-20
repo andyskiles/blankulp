@@ -1,0 +1,26 @@
+/*
+========================
+Partials-Sidebar
+========================
+*/
+
+// sidebar
+.site-sidebar {
+	
+	@include bp(l) {
+		border-left: 1px solid black;
+		padding-left: 15px;
+	}
+}
+
+.sidebar-block {
+
+	// block title
+	h3 {}
+	
+	ul {}
+	
+	li {}
+	
+	a {}
+}

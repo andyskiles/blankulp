@@ -4,7 +4,7 @@
 	<?php endif; ?>
 </footer>
 <small class="copyright">
-	Copyright 2015
+	Please, do WTF you please.
 </small>
 </div>
 <?php wp_footer(); ?>

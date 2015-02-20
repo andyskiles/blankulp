@@ -19,18 +19,32 @@ Partials-Page
 	
 	// page title
 	h1 {}
-
-	
 }
 
 
-// sidebar
-.site-sidebar {
+
+// .page-content article (for archive posts)
+.archive article {
 	
-	@include bp(l) {
-		border-left: 1px solid black;
-		padding-left: 15px;
-	}
+	// header
+	.entry-header {}
+	// header h2
+	.entry-title {}
+	
+	// meta
+	.entry-meta {}
+	// meta p
+	.meta-details {}
+	
+	// excerpt
+	.entry-summary {}
+	
+	// footer
+	.entry-footer {}
+	// meta p (not a)
+	.cat-links {}
+	// meta p (not a)
+	.tag-links {}
 }
 
 

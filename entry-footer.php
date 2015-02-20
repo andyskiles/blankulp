@@ -1,4 +1,8 @@
 <footer class="entry-footer">
-<span class="cat-links"><?php _e( 'Categories: ', 'blankslate' ); ?><?php the_category( ', ' ); ?></span>
-<span class="tag-links"><?php the_tags(); ?></span>
-</footer> 
+<p class="cat-links">
+	Categories: <?php the_category( ', ' ); ?>
+</p>
+<p class="tag-links">
+	<?php the_tags( 'Tags: ', ', ', '<br />' ); ?>
+</p>
+</footer>
