@@ -4,12 +4,32 @@ Partials-Page
 ========================
 */
 
+// main content + sidebar container
+.content-wrap {
+	overflow: hidden;
+	padding: 30px 0;
+}
+
+
 // main content
 .page-content {}
 
+// page header
+.entry-header {
+	
+	// page title
+	h1 {}
+}
+
 
 // sidebar
-.site-sidebar {}
+.site-sidebar {
+	
+	@include bp(l) {
+		border-left: 1px solid black;
+		padding-left: 15px;
+	}
+}
 
 
 
@@ -18,15 +38,6 @@ Partials-Page
 .cat-links {}
 
 .tag-links {}
-
-
-
-.page-header {}
-
-.page-content {}
-
-.page-footer {}
-
 
 
 

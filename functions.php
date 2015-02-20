@@ -8,7 +8,7 @@ function blankulp_setup() {
 	global $content_width;
 	if ( ! isset( $content_width ) ) $content_width = 640;
 	register_nav_menus(
-	array( 'main-menu' => __( 'Main Menu', 'blankulp' ) )
+		array( 'main-menu' => __( 'Main Menu', 'blankulp' ) )
 	);
 }
 

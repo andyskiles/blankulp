@@ -4,6 +4,18 @@ Base-Base
 ========================
 */
 
+@font-face {
+  font-family: 'AvenirNext LT Pro Regular';
+  src: url('site_assets/css/fonts/AvenirNextLTPro-Regular.eot'); /* IE9 Compat Modes */
+  src: url('site_assets/css/fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('site_assets/css/fonts/AvenirNextLTPro-Regular.woff') format('woff'), /* Modern Browsers */
+       url('site_assets/css/fonts/AvenirNextLTPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('site_assets/css/fonts/AvenirNextLTPro-Regular.svg#fa20c367c6a148cda65f50238befb5f2') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -11,19 +23,24 @@ Base-Base
 }
 
 html {
-	font: 100%/1.5 serif, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
 
   @include bp(l) {
-    font: 125%/1.5 serif, sans-serif;
+    font-size: 125%;
   }
 }
 
 body {
 	background: darken(white, 2%);
-	font-family: serif, sans-serif;
+	font-family: 'AvenirNext LT Pro Regular', sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-  color: $black;
+  	color: $black;
+}
+
+img, iframe, video {
+	max-width: 100%;
 }
 
 

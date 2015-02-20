@@ -18,6 +18,7 @@ Layout-Page
 
 	@include bp(l) {
 		@include span(8);
+		margin-left: 0;
 	}
 }
 
@@ -25,5 +26,12 @@ Layout-Page
 	
 	@include bp(l) {
 		@include span(4);
+		display: flex;
+		flex-direction: column;
+		margin-left: 0;
 	}
+}
+
+.sidebar-block {
+	flex-grow: 1;
 }

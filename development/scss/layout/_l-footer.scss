@@ -5,7 +5,10 @@ Layout-Footer
 */
 
 .site-footer {
-	display: flex;
+	
+	@include bp(l) {
+		display: flex;
+	}
 }
 
 .footer-block {
